@@ -2,7 +2,6 @@
 
 A beautiful, interactive web application created as a special gift for Women's Day.
 
-## 💖 Created by [caigicungdev](https://github.com/caigicungdev)
 
 ## 🌟 Features
 
