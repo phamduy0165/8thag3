@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import MessageCard from './components/MessageCard';
 import FloatingHearts from './components/FloatingHearts';
+import Music from './components/Music';
 import './App.css';
 
 const AppContainer = styled.div`
@@ -83,7 +84,7 @@ const Title = styled(motion.h1)`
   transition={{ duration: 1 }}
   className="responsive-title"
 >
- Chúc mừng ngày 8/3, Nhật Lệ cụa anhhh!
+ Chúc mừng Sinh Nhật
 </Title>
 
 const PuppyContainer = styled(motion.div)`
@@ -159,7 +160,10 @@ function App() {
         style={{ top: `${top}%`, left: `${left}%` }}
       />
     );
+
+  
   });
+  
 
   // Decorative circles
   const circles = [
@@ -181,6 +185,7 @@ function App() {
       <StarContainer>
         {stars}
       </StarContainer>
+      <Music /> {/* Phát nhạc ẩn */}
       
       {/* Decorative circles */}
       {circles.map((circle, index) => (
@@ -205,7 +210,7 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Chúc mừng ngày 8/3, Nhật Lệ cụa anhhh!
+        Happy Birthday,tuổi mới nhiều niềm vui mới nhé!
       </Title>
       
       <PuppyContainer
@@ -235,6 +240,8 @@ function App() {
       <MessageCard marginBottom={true} />
     </AppContainer>
   );
+
 }
+
 
 export default App;

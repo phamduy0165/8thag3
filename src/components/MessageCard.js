@@ -170,23 +170,35 @@ const FloatingHeart = styled(motion.div)`
 `;
 
 const CustomHeart = ({ color }) => (
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M16 28C16 28 3 20.5 3 11.5C3 7.5 6 4.5 10 4.5C12.5 4.5 14.5 5.5 16 7.5C17.5 5.5 19.5 4.5 22 4.5C26 4.5 29 7.5 29 11.5C29 20.5 16 28 16 28Z"
-            fill={color}
-            stroke="white"
-            strokeWidth="1"
-        />
-    </svg>
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect x="9" y="6" width="2" height="4" fill="#FFD700"/>
+  <rect x="15" y="6" width="2" height="4" fill="#FFD700"/>
+  <rect x="21" y="6" width="2" height="4" fill="#FFD700"/>
+  
+
+  <circle cx="10" cy="5" r="1" fill="orange"/>
+  <circle cx="16" cy="5" r="1" fill="orange"/>
+  <circle cx="22" cy="5" r="1" fill="orange"/>
+  
+
+  <rect x="7" y="10" width="18" height="6" rx="1" fill="#FFE4E1" stroke="#D2691E" stroke-width="0.5"/>
+  
+
+  <rect x="5" y="16" width="22" height="8" rx="1" fill="#FFD1DC" stroke="#D2691E" stroke-width="0.5"/>
+  
+
+  <rect x="4" y="24" width="24" height="2" fill="#D2691E"/>
+</svg>
+
 );
 
 const messages = [
-    "Gửi đến người phụ nữ tuyệt vời nhất trong cuộc đời anh, em mang đến niềm vui và hạnh phúc cho mỗi ngày.",
-    "Nụ cười của em thắp sáng thế giới của anh, và tình yêu của em lấp đầy trái tim anh bằng sự ấm áp.",
-    "Vào ngày đặc biệt này, anh muốn em biết em có ý nghĩa như thế nào đối với anh.",
-    "Em không chỉ là bạn gái của anh, em là bạn thân nhất của anh, là người bạn tâm giao và là tất cả của anh.",
-    "Anh trân trọng từng khoảnh khắc chúng ta bên nhau, và anh mong muốn tạo ra nhiều kỷ niệm đẹp hơn nữa.",
-    "Chúc mừng Ngày Phụ nữ, tình yêu của anh! Em xứng đáng có được tất cả hạnh phúc trên thế giới này."
+    "Gửi đến một người bạn tuyệt vời.",
+    "Chúc bạn tuổi mới nhiều niềm vui mới.",
+    "Cầu gì được nấy bạn nhé.",
+    "Cầu tài được tài,cầu tình được tình.",
+    "Chúc you sống mãi trong ánh sáng của 10 phương chư phật.",
+    "Lớp bờ you."
 ];
 
 // Then update the MessageCard component to accept and pass the prop:
@@ -415,7 +427,7 @@ const MessageCard = ({ marginBottom }) => {
                                 repeatType: "reverse"
                             }}
                         >
-                            I Love You
+                            Happy Birthday!
                         </motion.div>
                     </FinalMessage>
                 </FullscreenOverlay>
