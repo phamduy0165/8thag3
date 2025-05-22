@@ -28,7 +28,7 @@ const CardContainer = styled(motion.div)`
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(to right, #ff69b4, #ffb6c1, #ff69b4);
+    background: linear-gradient(to right,rgb(252, 17, 17), #ffb6c1, #ff69b4);
     animation: shimmer 3s infinite linear;
     background-size: 200% 100%;
   }
@@ -64,14 +64,14 @@ const Message = styled(motion.p)`
   line-height: 1.7;
   color: #333;
   margin-bottom: 25px;
-  font-family: 'Comic Sans MS', 'Bubblegum Sans', 'Indie Flower', cursive;
+  font-family: 'Noto Sans', 'Bubblegum Sans', 'Indie Flower', cursive;
   text-align: center;
   position: relative;
   
   &:first-letter {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ff69b4;
+    color:rgb(247, 4, 4);
   }
   
   @media (max-width: 768px) {
@@ -97,7 +97,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled(motion.button)`
-  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  background: linear-gradient(45deg,rgb(250, 31, 31),rgb(209, 70, 91));
   border: none;
   border-radius: 50px;
   padding: 14px 28px;
@@ -150,7 +150,7 @@ const ProgressBar = styled.div`
 
 const Progress = styled.div`
   height: 100%;
-  background: linear-gradient(to right, #ff69b4, #ffb6c1);
+  background: linear-gradient(to right,rgb(245, 9, 9),rgb(202, 79, 79));
   width: ${props => props.progress}%;
   transition: width 0.3s ease;
 `;
@@ -189,6 +189,7 @@ const CustomHeart = ({ color }) => (
 
   <rect x="4" y="24" width="24" height="2" fill="#D2691E"/>
 </svg>
+
 
 );
 
@@ -230,14 +231,14 @@ const FinalMessage = styled(motion.div)`
   font-size: 4rem;
   color: white;
   font-family: 'Pacifico', cursive;
-  text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  text-shadow: 0 0 20px rgb(245, 44, 44), 0 0 30px  rgb(189, 105, 105);
   z-index: 1001;
   position: absolute;
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
   padding: 30px 50px;
   border-radius: 20px;
-  box-shadow: 0 0 50px rgba(255, 105, 180, 0.8);
+  box-shadow: 0 0 50px rgba(202, 35, 35, 0.8);
   backdrop-filter: blur(10px);
   
   @media (max-width: 768px) {
@@ -357,7 +358,8 @@ const MessageCard = ({ marginBottom }) => {
                         whileHover={{ scale: 1.05, boxShadow: '0 6px 20px rgba(255, 105, 180, 0.6)' }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        {currentMessage === messages.length - 1 ? 'Finish' : 'Next Message'}
+                        {currentMessage === messages.length - 1 ? 'Finish' : 'Tiếp tục'}
+                        <span style={{ marginLeft: '10px' }}>🎂</span>
                         <HeartIcon
                             animate={{
                                 scale: [1, 1.3, 1],
@@ -416,9 +418,9 @@ const MessageCard = ({ marginBottom }) => {
                         <motion.div
                             animate={{
                                 textShadow: [
-                                    "0 0 20px #ff69b4, 0 0 30px #ff69b4",
-                                    "0 0 40px #ff69b4, 0 0 60px #ff69b4",
-                                    "0 0 20px #ff69b4, 0 0 30px #ff69b4"
+                                    "0 0 20px rgb(248, 8, 8), 0 0 30px rgb(238, 116, 116)",
+                                    "0 0 40px rgb(255, 0, 0), 0 0 60px rgb(238, 116, 116)",
+                                    "0 0 20px rgb(252, 0, 0)4, 0 0 30px rgb(238, 116, 116)"
                                 ]
                             }}
                             transition={{

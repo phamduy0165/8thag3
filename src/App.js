@@ -54,8 +54,8 @@ const Star = styled.div`
 
 const Title = styled(motion.h1)`
   font-size: clamp(1.8rem, 5vw, 3rem);
-  color: #ff69b4;
-  text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.5);
+  color:rgb(255, 10, 10);
+  text-shadow: 0 0 10px rgba(80, 11, 11, 0.7), 0 0 20px rgba(31, 30, 6, 0.5);
   margin-bottom: 20px;
   margin-top: 20px;
   z-index: 10;

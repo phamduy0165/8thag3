@@ -1,20 +1,27 @@
 import { useEffect } from 'react';
 
-function App() {
+function Music() {
   useEffect(() => {
     const audio = new Audio('/CMSN.mp3');
-    audio.volume = 0.5; // Giảm âm lượng xuống 50%
+    audio.volume = 0.5;
     audio.loop = true;
-    audio.play().catch((e) => {
-      console.log('Trình duyệt ngăn autoplay, sẽ phát khi có tương tác');
-    });
+
+    const playAudio = () => {
+      audio.play().catch((e) => {
+        console.log('Không thể phát nhạc:', e);
+      });
+    };
+
+    // Phát nhạc khi người dùng tương tác đầu tiên
+    window.addEventListener('click', playAudio, { once: true });
+
+    return () => {
+      window.removeEventListener('click', playAudio);
+      audio.pause(); // Dừng nhạc khi component bị unmount
+    };
   }, []);
 
-  return (
-    <div>
-      <h1>Chào mừng!</h1>
-    </div>
-  );
+  return null; // Component không render gì lên giao diện
 }
 
-export default App;
+export default Music;
