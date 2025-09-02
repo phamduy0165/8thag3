@@ -55,4 +55,3 @@ You can customize the messages by editing the messages array in the MessageCard.
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Made with ❤️ by caigicungdev# cute_web

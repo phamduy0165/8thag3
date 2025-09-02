@@ -194,11 +194,11 @@ const CustomHeart = ({ color }) => (
 );
 
 const messages = [
-    "Gửi đến một người bạn tuyệt vời.",
-    "Chúc bạn tuổi mới nhiều niềm vui mới.",
-    "Cầu gì được nấy bạn nhé.",
+    "Gửi đến Em Quỳnh xinh đẹp tuyệt vời.",
+    "Chúc em tuổi mới nhiều niềm vui mới.",
+    "Cầu gì được nấy em nhé.",
     "Cầu tài được tài,cầu tình được tình.",
-    "Chúc you sống mãi trong ánh sáng của 10 phương chư phật.",
+    "Chúc em sống mãi trong ánh sáng của 10 phương chư phật.",
     "Lớp bờ you."
 ];
 
